@@ -43,6 +43,10 @@ This is a simple weather application that allows users to get weather informatio
   - cd front-end
   - npm start
 
+3. Open your web browser and navigate to http://localhost:3000 to access the Weather Application.
+
+4. Enter a location in the search box to get the weather information for that location.
+
 ## API Key
 - The application requires an API key to fetch weather data. You can obtain a free API key by signing up on a weather data provider's website (e.g., Weatherstack, OpenWeatherMap).
 
