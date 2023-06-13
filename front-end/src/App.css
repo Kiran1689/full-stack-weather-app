@@ -1,0 +1,127 @@
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-image: url('./images/weather5.jpg'); /* you can change background image here */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #25b5e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button-disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+}
+.weather-data h2 {
+ font-size: 20px; 
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-row {
+  display: flex;
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.weather-box {
+  position: relative;
+  flex-basis: 100%;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  overflow:visible;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .weather-row {
+    flex-basis: 33.33%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 767px) {
+  .weather-row {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .weather-box {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+.weather-box img {
+  width: 50px; 
+  height: 50px; 
+  
+}
+
+
+
