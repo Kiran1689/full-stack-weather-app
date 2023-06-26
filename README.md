@@ -55,6 +55,11 @@ This is a simple weather application that allows users to get weather informatio
 - Please make sure to replace `<your-api-key>` with the actual API key obtained from the weather data provider.
 
 ## Application glimps
+
+To visit live click here :point_right: : [Weather App](https://weather-app-nu-tan-46.vercel.app/)
+
+***Make sure device location is turned ON***
+
 - Current weather based on your location
 
 ![Screenshot](/front-end/src/images/screenshot1.png)
