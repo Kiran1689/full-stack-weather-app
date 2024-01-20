@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('./images/weather5.jpg'); /* you can change background image here */
+  background-image: url('./images/weather5.jpg'); /* change background image here */
   background-size: cover;
   background-attachment: fixed;
 }
